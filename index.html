@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Aragão</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+<body>
+
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle">
+            <i class="fas fa-moon"></i> Modo Escuro
+        </button>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div id="foto">
+                    <img src="assets/foto_portfolio.jpg" alt="Foto de Charles Aragão">
+                </div>
+                <h1>Charles Aragão Cardoso</h1>
+                <h2>Desenvolvedor Web Jr</h2>
+            </div>
+            
+        </section>
+
+
+        <section id="sobre">
+            <h1>Sobre Mim</h1>
+            <p>Sou Charles Aragão, desenvolvedor web jr, estudante de ADS na Faculdade CDL e formado em ADM na Universidade de Fortaleza.</p>
+        </section>
+
+        <div class="separator"></div>
+
+        <section id="hobbies">
+            <h2>Meus Hobbies</h2>
+            <div class="hobbies-container">
+                <div class="hobby-card">
+                    <img src="assets/Corrida.jpg" alt="foto de um corredor de rua">
+                    <h3>Corrida</h3>
+                    <p>A corrida é um esporte que me ajuda a ter resistência, e a controlar a mente.</p>
+                </div>
+
+                <div class="hobby-card">
+                    <img src="assets/DBV.jpg" alt="foto de um desbravador">
+                    <h3>Voluntariado</h3>
+                    <p>Sou Desbravador desde minha infância. Hoje faço parte da direção desse projeto social.</p>
+                </div>
+
+                <div class="hobby-card">
+                    <img src="assets/Viagem.jpg" alt="foto de perfil com uma paisagem no fundo">
+                    <h3>Viagem</h3>
+                    <p>Amo viajar, sair de casa. Qualquer lugar que inclua a natureza é uma casa pra mim.</p>
+                </div>
+
+            <div class="hobby-card">
+                <div class="video-container">
+                    <iframe width="100%" height="150" 
+                    src="https://www.youtube.com/embed/_pa1KLXuW0Y?si=BITrskTwIWZWHYyD&amp;controls=0" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+                </div>
+                <h3>Séries e Filmes</h3>
+                <p>Esse é meu hobbie quando quero ficar sossegado em casa, maratonar séries e filmes do Star Wars.</p>
+            </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- <h2>Meus Hobbies</h2>
+
+        <ul>
+            <li>Esportes</li>
+            <li>Viajar</li>
+            <li>Voluntariado</li>
+            <li>Aprender</li>
+        </ul> -->
+
+        <!-- <form>
+            <h2>Contato</h2>
+            <label for="Nome">Nome</label>
+            <input type="nome" placeholder="Nome Completo" id="nome">
+
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Informe seu email" id="email">
+
+            <label for="telefone">Telefone</label>
+            <input type="telefone" placeholder="Informe seu telefone" id="telefone">
+            <button class="btn">Enviar</button>
+        </form> -->
+
+    </main>
+
+    <footer>
+        <div class="social-icons" id="contatos">
+            <a href="https://github.com/CharlesAragao" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/charles-aragão-bb3575127" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/charles.eragao" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <small>
+            &copy; 2025 Charles Aragão
+        </small>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const icon = toggleBtn.querySelector('i');
+    
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+    
+            const isDark = document.body.classList.contains('dark-mode');
+    
+            icon.classList = isDark ? 'fas fa-sun' : 'fas fa-moon';
+            toggleBtn.innerHTML = `<i class="${icon.classList}"></i> ${isDark ? 'Modo Claro' : 'Modo Escuro'}`;
+        });
+    </script>
+
+</body>
+</html>
